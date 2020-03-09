@@ -1,0 +1,9 @@
+<h1>Welcome, <%= @user.username %></h1>
+
+<div>
+    <%= gravatar_for @user %>
+</div>
+
+<h4><%= @user.username %>'s articles</h4>
+
+<%= render 'articles/article', obj: @user.articles%>
